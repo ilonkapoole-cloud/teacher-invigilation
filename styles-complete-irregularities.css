@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+    background: linear-gradient(135deg, #03148A 0%, #051f5c 100%);
     color: white;
     padding: 24px;
     text-align: center;
@@ -54,12 +54,12 @@ body {
     display: inline-block;
     width: 4px;
     height: 32px;
-    background-color: #ffeb3b;
+    background-color: #D0A872;
     border-radius: 2px;
 }
 
 .phase-header h2 {
-    color: #d32f2f;
+    color: #03148A;
     font-size: 24px;
     font-weight: 700;
 }
@@ -67,16 +67,16 @@ body {
 /* Instructions */
 .instructions {
     background-color: #f0f7ff;
-    border-left: 4px solid #d32f2f;
+    border-left: 4px solid #03148A;
     padding: 16px;
     margin-bottom: 28px;
     font-size: 14px;
     line-height: 1.6;
-    color: #d32f2f;
+    color: #03148A;
 }
 
 .instructions strong {
-    color: #d32f2f;
+    color: #03148A;
 }
 
 /* Columns Container */
@@ -95,7 +95,7 @@ body {
 }
 
 .column-header {
-    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+    background: linear-gradient(135deg, #03148A 0%, #051f5c 100%);
     color: white;
     padding: 16px;
     font-weight: 700;
@@ -105,12 +105,12 @@ body {
 }
 
 .column-description {
-    background-color: #fff3e0;
+    background-color: #e8f1f3;
     padding: 12px;
     font-size: 12px;
     line-height: 1.4;
     color: #424242;
-    border-bottom: 1px solid #ffe0b2;
+    border-bottom: 1px solid #d0e0e3;
     min-height: 45px;
 }
 
@@ -124,7 +124,7 @@ body {
 
 /* Droppable Zones */
 .droppable {
-    border: 2px dashed #d0d0d0;
+    border: 2px dashed #7EA8AD;
     border-radius: 6px;
     padding: 12px;
     min-height: 140px;
@@ -132,15 +132,15 @@ body {
 }
 
 .droppable.drag-over {
-    background-color: #ffebee;
-    border-color: #d32f2f;
-    box-shadow: inset 0 0 8px rgba(211, 47, 47, 0.1);
+    background-color: #e8f1f3;
+    border-color: #03148A;
+    box-shadow: inset 0 0 8px rgba(3, 20, 138, 0.1);
 }
 
 /* Irregularity Cards */
 .irregularity-card {
     background-color: white;
-    border: 2px solid #d32f2f;
+    border: 2px solid #7EA8AD;
     border-radius: 8px;
     padding: 14px;
     cursor: grab;
@@ -158,8 +158,9 @@ body {
 }
 
 .irregularity-card:hover {
-    box-shadow: 0 4px 8px rgba(211, 47, 47, 0.15);
+    box-shadow: 0 4px 8px rgba(3, 20, 138, 0.15);
     transform: translateY(-2px);
+    border-color: #03148A;
 }
 
 .irregularity-card.dragging {
@@ -168,8 +169,8 @@ body {
 }
 
 .irregularity-card.placed {
-    box-shadow: 0 2px 4px rgba(211, 47, 47, 0.1);
-    background-color: #fce4ec;
+    box-shadow: 0 2px 4px rgba(3, 20, 138, 0.1);
+    background-color: #e8f1f3;
 }
 
 .irregularity-card.correct {
@@ -179,7 +180,7 @@ body {
 
 /* Card Bank Container */
 .card-bank-container {
-    border: 2px dashed #c0c0c0;
+    border: 2px dashed #b0bec5;
     border-radius: 8px;
     padding: 20px;
     background-color: #f5f5f5;
@@ -213,7 +214,7 @@ body {
 .score-display {
     font-size: 18px;
     font-weight: 600;
-    color: #d32f2f;
+    color: #03148A;
 }
 
 #score {
@@ -226,7 +227,7 @@ body {
 }
 
 .reset-btn {
-    background-color: #d32f2f;
+    background-color: #03148A;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -238,8 +239,8 @@ body {
 }
 
 .reset-btn:hover {
-    background-color: #c62828;
-    box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+    background-color: #051f5c;
+    box-shadow: 0 2px 8px rgba(3, 20, 138, 0.3);
 }
 
 .reset-btn:active {
