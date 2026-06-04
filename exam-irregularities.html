@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Irregularities Classification</title>
+    <link rel="stylesheet" href="styles-irregularities.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Examination Irregularities Classification</h1>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <div class="phase-content active" id="phase-irregularities">
+                <div class="phase-header">
+                    <div class="phase-indicator"></div>
+                    <h2>Classify Examination Irregularities</h2>
+                </div>
+
+                <div class="instructions">
+                    <strong>Instructions:</strong> Drag each irregularity example into the correct category. Each category has a definition to help guide your decisions.
+                </div>
+
+                <!-- Category Columns -->
+                <div class="columns-container">
+                    <!-- Candidate Misconduct -->
+                    <div class="column" data-category="candidate-misconduct">
+                        <div class="column-header">CANDIDATE MISCONDUCT</div>
+                        <div class="column-description">
+                            When a candidate acts in a way that compromises the integrity of the examination.
+                        </div>
+                        <div class="column-body droppable"></div>
+                    </div>
+
+                    <!-- Script Violations -->
+                    <div class="column" data-category="script-violations">
+                        <div class="column-header">SCRIPT VIOLATIONS</div>
+                        <div class="column-description">
+                            Mishandling, incorrect completion, or unauthorised removal of examination scripts.
+                        </div>
+                        <div class="column-body droppable"></div>
+                    </div>
+
+                    <!-- Candidate Administration -->
+                    <div class="column" data-category="candidate-administration">
+                        <div class="column-header">CANDIDATE ADMINISTRATION</div>
+                        <div class="column-description">
+                            Issues relating to candidate registration, identification, admission, or examination administration procedures.
+                        </div>
+                        <div class="column-body droppable"></div>
+                    </div>
+
+                    <!-- Venue and Technical -->
+                    <div class="column" data-category="venue-technical">
+                        <div class="column-header">VENUE & TECHNICAL ISSUES</div>
+                        <div class="column-description">
+                            Circumstances affecting the examination venue or equipment.
+                        </div>
+                        <div class="column-body droppable"></div>
+                    </div>
+                </div>
+
+                <!-- Irregularity Examples Bank -->
+                <div class="card-bank-container">
+                    <h3>Irregularity Examples</h3>
+                    <div class="card-bank droppable" id="card-bank">
+                        <!-- Irregularity cards will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Score Display -->
+                <div class="score-section">
+                    <div class="score-display">
+                        <span>Score:</span>
+                        <span id="score">0</span> / <span id="total">0</span>
+                    </div>
+                    <button id="reset-btn" class="reset-btn">Reset Activity</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-irregularities.js"></script>
+</body>
+</html>
