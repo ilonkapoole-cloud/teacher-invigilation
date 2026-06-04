@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Invigilation Protocol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Examination Invigilation Protocol</h1>
+        </div>
+
+        <!-- Phase Tabs -->
+        <div class="phase-tabs">
+            <div class="tab active" data-phase="preparation">
+                PREPARATION
+            </div>
+            <div class="tab" data-phase="exam-start">
+                EXAM START
+            </div>
+            <div class="tab" data-phase="during-writing">
+                DURING WRITING
+            </div>
+            <div class="tab" data-phase="conclusion">
+                CONCLUSION
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <!-- Phase 1: Venue Preparation -->
+            <div class="phase-content active" id="phase-preparation">
+                <div class="phase-header">
+                    <div class="phase-indicator">Phase 1:</div>
+                    <h2>Venue Preparation</h2>
+                </div>
+
+                <div class="instructions">
+                    <strong>Instructions:</strong> Drag each duty card into the correct role column. If a card doesn't belong there, it will return to the bank below.
+                </div>
+
+                <!-- Drag-and-Drop Columns -->
+                <div class="columns-container">
+                    <div class="column" data-role="chief-invigilator">
+                        <div class="column-header">CHIEF INVIGILATOR</div>
+                        <div class="column-body droppable"></div>
+                    </div>
+
+                    <div class="column" data-role="invigilator">
+                        <div class="column-header">INVIGILATOR</div>
+                        <div class="column-body droppable"></div>
+                    </div>
+
+                    <div class="column" data-role="both-roles">
+                        <div class="column-header">BOTH ROLES</div>
+                        <div class="column-body droppable"></div>
+                    </div>
+                </div>
+
+                <!-- Duty Cards Bank -->
+                <div class="card-bank-container">
+                    <div class="card-bank droppable" id="card-bank">
+                        <!-- Duty cards will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
